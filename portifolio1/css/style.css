@@ -1,0 +1,172 @@
+@charset 'UTF-8';
+
+@font-face {
+    font-family: 'Link';
+    src: url(font/DigitalDisco.ttf);
+}
+
+@font-face {
+    font-family: 'MeuNome';
+    src: url(font/quickynick3d.ttf);
+}
+
+:root {
+    --fundo: rgb(255, 255, 255);
+    --fundocinza: #eeeeee;
+    --textolink: rgb(0, 132, 255);
+    --nome: #ffffff;
+    --bordanivel: #c0b7b7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+main {
+    background-image: url(img/fundo_grande.jpg);
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    background-attachment: fixed;
+}
+
+/* Cabecalho do portifólio*/
+
+header {
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+    backdrop-filter: blur(2px);
+}
+
+.link {
+    display: flex;
+    width: max-content;
+    padding: 10px;
+}
+
+.link a {
+    margin: auto 20px;
+    text-decoration: none;
+    font-family: 'Link', Arial, Helvetica, sans-serif;
+    font-size: 1.8vw;
+    color: var(--nome);
+    position: relative;
+    top: -100px;
+    animation-name: deslize-cabecalho;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: 1s;
+}
+
+#sobremim {
+    animation-delay: 0.25s;
+}
+
+#habilidades {
+    animation-delay: 0.50s;
+}
+
+#repositorios {
+    animation-delay: 0.75s;
+}
+
+#contato {
+    animation-delay: 1s;
+}
+
+.nome {
+    margin: 0;
+    padding: 20px;
+    width: max-content;
+    text-align: right;
+    font-family: 'MeuNome', Arial, Helvetica, sans-serif;
+    font-size: 3vw;
+    color: var(--nome);
+    position: relative;
+    top: -100px;
+    animation-name: deslize-cabecalho;
+    animation-delay: 1.25s;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    transition: linear;
+}
+
+@keyframes deslize-cabecalho {
+    0% {
+        top: -100px;
+    }
+
+    100% {
+        top: 0px;
+    }
+}
+
+/* Corpo */
+/* Artigo sobre mim */
+
+#apresentacao {
+    width: 100%;
+}
+
+#apresentacao-container {
+    margin: 40px auto; padding: 30px;
+    width: 40%;
+    font-size: 14px;
+    text-align: center;
+    background-color: var(--fundo);
+}
+
+#minhafoto {
+    border-radius: 20px;
+}
+
+#apresentacao-container > p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+/* ESPAÇAMENTO */
+
+#vazio {
+    height: 80px;
+}
+
+/* SOBRE MIM */
+
+#sobremim {
+    padding: 20px 0px;
+    width: 100%;
+    background-color: var(--fundocinza);
+}
+
+#sobremim-texto {
+    display: block;
+    margin: auto; padding: 20px;
+    width: 60%;
+    background-color: rgba(128, 128, 128, 0.336);
+}
+
+#sobremim-titulo{
+    padding: 10px 10px 10px 0px;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+}
+
+.sobremim-paragrafo{
+    text-align: justify;
+    font-size: 20px;
+}
+
+#sobremim-skills{
+    border: 1px solid black;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    animation: deslize 5s linear;
+    transition: ease-in-out;
+}
+
+
