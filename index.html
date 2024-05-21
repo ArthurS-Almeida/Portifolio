@@ -5,24 +5,25 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="css/style.css">
-        <title>Portifólio</title>
+        <title>DevArthur-s Portifólio</title>
     </head>
 
     <body>
 
-        <main id="apresentacao">
-            <header>
+        <main id="apresentacao"> <!-- Apresentação do portifolio-->
+            <header> <!-- Cabecalho com links direcionais-->
                 <div class="link">
                     <a href="#sobremim" id="linksobremim">Sobre mim</a>
-                    <a href id="repositorios">Repositórios</a>
-                    <a href id="contato">Contato</a>
+                    <a href="#certificados"
+                        id="linkcertificados">Certificados</a>
+                    <a href="#contatos" id="linkcontato">Contato</a>
                 </div>
-                <div>
+                <div> <!-- Logomarca -->
                     <p class="nome">DevArthur-S</p>
                 </div>
             </header>
 
-            <article id="apresentacao-container">
+            <article id="apresentacao-container"> <!-- Minha apresentação -->
                 <h1>Olá! Esse sou eu, prazer em te conhecer! Espero que goste do
                     que tenho pra te mostrar...</h1>
                 <br>
@@ -37,30 +38,115 @@
 
             </article>
 
-            <article id="vazio"></article>
+            <article id="vazio"></article> <!-- Espaçamento -->
 
-            <article id="sobremim">
+            <article id="sobremim"> <!-- Sobre mim -->
                 <aside id="sobremim-texto">
                     <h1 id="sobremim-titulo">SOBRE MIM:</h1>
                     <hr>
                     <br>
-                    <p class="sobremim-paragrafo">Eu sou Arthur Vinicius, um recém-formado em Técnico em desenvolvimentode Software na Escola Técnica Estadual Ginásio Pernambucano. Durante meus estudos, trabalhei em projetos que me permitiram ganhar experiência prática em várias tecnologias e metodologias. (Ex: <a href="">Pandora</a>).
-                    </p>
-                        
+                    <p class="sobremim-paragrafo">Eu sou Arthur Vinicius, um
+                        estudante em Técnico em Desenvolvimento de Software
+                        na Escola Técnica Estadual Ginásio Pernambucano. Durante
+                        meus estudos, trabalhei em <a
+                            href="https://github.com/CairoHS/Pandora"
+                            target="_blank">projetos</a> que me permitiram
+                        ganhar experiência prática em algumas tecnologias e
+                        metodologias.</p>
+
                     <br>
-                        
+
                     <table id="sobremim-skills" cellspacing="10px">
-                        <tr><th colspan="2">Minhas principais competências são:</th></tr>
-                        <tr><td>Linguagens de Programação:</td> <td>JavaScript, Python, PHP. </td></tr>
-                        <tr><td>Bancos de Dados:</td> <td>MySQL, MariaDB</td></tr>
+                        <!-- SKILLS -->
+                        <tr><th colspan="2">Minhas principais competências
+                                são:</th></tr>
+                        <tr><td>Linguagens de Programação:</td> <td>JavaScript,
+                                Python, PHP. </td></tr>
+                        <tr><td>Bancos de Dados:</td> <td>MySQL,
+                                MariaDB</td></tr>
                     </table>
 
                     <br>
-
-                        <p class="sobremim-paragrafo">Estou entusiasmado para começar minha carreira e aplicar o que aprendi em um ambiente de trabalho real. Sou dedicado, detalhista e gosto de trabalhar em equipe para alcançar os melhores resultados. Estou constantemente aprendendo e sempre a disposição de novos desafios que me permitam crescer profissionalmente.</p>
+                    <p class="sobremim-paragrafo">Estou entusiasmado para
+                        começar minha carreira e aplicar o que aprendi em um
+                        ambiente de trabalho real. Estou constantemente
+                        aprendendo e sempre a
+                        disposição de novos desafios que me permitam crescer
+                        profissionalmente. <br>
+                        Futuramente, pretendo atuar no ramo de
+                        <strong>Desenvolvimento de Games</strong>.</p>
                 </aside>
             </article>
         </main>
+
+        <main id="certificados"> <!-- Certificados -->
+            <h1 id="certificado-titulo">Certificados:</h1>
+            <br>
+            <hr>
+            <br>
+            <br>
+
+            <section id="certificado-sessao">
+
+                <div class="certificado-caixa">
+                    <a href="https://imgur.com/a/1FjBGZf" target="_blank" title="Link externo para melhor visualização." class="link-certificado , certificado-legenda">
+                        <img src="css/img/certificado-soucode.png" alt="Cerificado da SouCode sobre Infraestrutura de Dados"class="certificado-imagem">
+                        <br>
+                        InfraEstrutura de Dados - SouCode
+                    </a>
+                </div>
+
+                <div class="certificado-caixa">
+                    <img src alt class="certificado-imagem">
+                    <label>Técnico em Desenvolvimento de Software.</label>
+                </div>
+            </section>
+        </main>
+
+        <footer id="rodape">
+            <!-- Rodape com Contatos, Projetos e Repositorios-->
+            <h1 id="rodape-titulo">DevArthur-S</h1>
+            <br>
+            <hr>
+
+            <section id="rodape-informacoes">
+
+                <div class="rodape-informacoes-caixa">
+                    <h2 id="contatos">Contato:</h2>
+
+                    <ul class="lista">
+                        <li><a href class="link-rodape">Linkedin</a></li>
+                        <li><a href class="link-rodape">Instagram</a></li>
+                        <li><a href class="link-rodape">Email</a></li>
+                    </ul>
+                </div>
+
+                <div class="rodape-informacoes-caixa" id="caixa-repositorio">
+                    <h2 id="repositorios">Repositorios/Projetos:</h2>
+                    <ul class="lista">
+                        <li><a href="https://github.com/CairoHS/Pandora.git"
+                                target="_blank"
+                                class="link-rodape">Pandora</a></li>
+                        <li><a href class="link-rodape">Projeto2</a></li>
+                        <li><a href class="link-rodape">Projeto3</a></li>
+                    </ul>
+
+                </div>
+                <a href="https://github.com/DevArthur-S?tab=repositories"
+                    target="_blank" id="link-github-icon">
+                    <img src="css/img/github-icon.png" alt="Icone do github"
+                        id="github-icon">
+                </a>
+            </section>
+            <br>
+            <hr>
+            <br>
+            <p id="copyrigth">&copy; Arthur Vinicius, 2024. Todos os direitos
+                reservados. O
+                conteúdo deste portfólio é de propriedade exclusiva e não pode
+                ser copiado, distribuído ou usado de outra forma sem a permissão
+                expressa por escrito.</p>
+        </footer>
 
         <script src="portifolio.js"></script>
     </body>

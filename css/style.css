@@ -11,7 +11,7 @@
 }
 
 :root {
-    --fundo: rgb(255, 255, 255);
+    --fundo: rgba(255, 255, 255, 0.733);
     --fundocinza: #eeeeee;
     --textolink: rgb(0, 132, 255);
     --nome: #ffffff;
@@ -24,7 +24,7 @@
 }
 
 
-main {
+#apresentacao {
     background-image: url(img/fundo_grande.jpg);
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -60,7 +60,7 @@ header {
     transition: 1s;
 }
 
-#sobremim {
+#linksobremim {
     animation-delay: 0.25s;
 }
 
@@ -68,26 +68,33 @@ header {
     animation-delay: 0.50s;
 }
 
-#repositorios {
+#linkcertificados {
     animation-delay: 0.75s;
 }
 
-#contato {
+#linkcontato {
     animation-delay: 1s;
 }
 
+#linksobremim:hover, #habilidades:hover, #linkcertificados:hover, #linkcontato:hover{
+    font-size: 20px;
+    margin: auto 30px;
+    text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.527);
+    transition: 0.5s;
+    animation-delay: 0s;
+}
+
 .nome {
-    margin: 0;
-    padding: 20px;
+    margin: 0; padding: 20px;
     width: max-content;
     text-align: right;
     font-family: 'MeuNome', Arial, Helvetica, sans-serif;
-    font-size: 3vw;
+    font-size: 2vw;
     color: var(--nome);
     position: relative;
     top: -100px;
     animation-name: deslize-cabecalho;
-    animation-delay: 1.25s;
+    animation-delay: 1.50s;
     animation-duration: 2s;
     animation-fill-mode: forwards;
     transition: linear;
@@ -106,16 +113,15 @@ header {
 /* Corpo */
 /* Artigo sobre mim */
 
-#apresentacao {
-    width: 100%;
-}
-
 #apresentacao-container {
     margin: 40px auto; padding: 30px;
-    width: 40%;
+    width: 50%;
     font-size: 14px;
     text-align: center;
     background-color: var(--fundo);
+    backdrop-filter: blur(10px);
+    border-radius: 1px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.719);
 }
 
 #minhafoto {
@@ -136,16 +142,18 @@ header {
 /* SOBRE MIM */
 
 #sobremim {
-    padding: 20px 0px;
+    padding: 40px 0px;
     width: 100%;
-    background-color: var(--fundocinza);
+    background-color: #ffffff;
+    box-shadow: 2px 2px 10px #00000096;
 }
 
 #sobremim-texto {
     display: block;
     margin: auto; padding: 20px;
-    width: 60%;
-    background-color: rgba(128, 128, 128, 0.336);
+    width: 50%;
+    background-color: #bbbbbb;
+    border-radius: 10px;
 }
 
 #sobremim-titulo{
@@ -169,4 +177,142 @@ header {
     transition: ease-in-out;
 }
 
+/* CERTIFICADOS */
 
+#certificados{
+    background-image: url(img/fundo-certificado.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    padding: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#certificado-titulo{
+    text-align: center;
+    color: white;
+}
+
+#certificado-sessao{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.certificado-caixa{
+    width: max-content;
+    margin: auto;
+}
+
+.certificado-caixa:hover{
+    color: gray;
+}
+
+
+.link-certificado{
+    text-decoration: none;
+    display: grid;
+}
+
+.link-certificado:hover{
+    color: gray;
+}
+
+.certificado-imagem{
+    width: 300px;
+    border-radius: 10px;
+    border: 2px solid rgb(116, 71, 29);
+    box-shadow: 0px 0px 50px rgba(255, 255, 255, 0.322);
+    transition: 0.2s ease-in-out;
+}
+
+.certificado-imagem:hover{
+    width: 320px;
+    transition: 0.2s ease-in-out;
+    box-shadow: 0px 0px 100px rgba(255, 255, 255, 0.322);
+}
+
+.certificado-legenda{
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+
+/* Rodapé */
+
+#rodape{
+    padding: 20px;
+    background-color: rgb(179, 179, 179);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#rodape-titulo{
+    font-family: 'MeuNome', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color: #414141b2;
+}
+
+#rodape-informacoes{
+    display: flex;
+    padding: 10px;
+}
+
+#caixa-repositorio{
+    margin: auto;
+}
+
+.rodape-informacoes-caixa > h2{
+    color: #414141b2;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+
+.lista{
+    list-style: none;
+    margin: auto;
+}
+
+.lista > li{
+    margin-top: 5px;
+    font-size: 15px;
+}
+
+.link-rodape{
+    color: #000000;
+}
+
+.link-rodape:hover{
+    color: #000000;
+}
+
+.link-rodape:visited{
+    color: #797979b2;
+}
+.link-rodape:visited:hover{
+    color: #000000;
+}
+
+#link-github-icon{
+    height: min-content;
+    border-radius: 20px;
+    
+}
+
+#github-icon{
+    margin-top: 10px;
+    width: 40px;
+    transition: 0.1s ease-in-out;
+}
+
+#github-icon:hover{
+    width: 45px;
+    transition: 0.1s ease-in-out;
+}
+
+
+#copyrigth{
+    text-align: center;
+    font-size: 12px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
