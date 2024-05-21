@@ -39,10 +39,10 @@
             </article>
 
             <article id="vazio"></article> <!-- Espaçamento -->
-
-            <article id="sobremim"> <!-- Sobre mim -->
+        </main>
+            <main id="sobremim"> <!-- Sobre mim -->
                 <aside id="sobremim-texto">
-                    <h1 id="sobremim-titulo">SOBRE MIM:</h1>
+                    <h1 id="sobremim-titulo">Sobre mim:</h1>
                     <hr>
                     <br>
                     <p class="sobremim-paragrafo">Eu sou Arthur Vinicius, um
@@ -58,12 +58,16 @@
 
                     <table id="sobremim-skills" cellspacing="10px">
                         <!-- SKILLS -->
-                        <tr><th colspan="2">Minhas principais competências
-                                são:</th></tr>
-                        <tr><td>Linguagens de Programação:</td> <td>JavaScript,
-                                Python, PHP. </td></tr>
-                        <tr><td>Bancos de Dados:</td> <td>MySQL,
-                                MariaDB</td></tr>
+                        <tr>
+                            <th colspan="2">Minhas principais competências são:</th>
+                        </tr>
+                        <tr>
+                            <td>Linguagens de Programação:</td> 
+                            <td>JavaScript, Python, PHP. </td>
+                        </tr>
+                        <tr>
+                            <td>Bancos de Dados:</td> <td>MySQL,MariaDB</td>
+                        </tr>
                     </table>
 
                     <br>
@@ -72,12 +76,30 @@
                         ambiente de trabalho real. Estou constantemente
                         aprendendo e sempre a
                         disposição de novos desafios que me permitam crescer
-                        profissionalmente. <br>
-                        Futuramente, pretendo atuar no ramo de
-                        <strong>Desenvolvimento de Games</strong>.</p>
+                        profissionalmente.
+                    </p>
+
+                    <table  id="sobremim-pontos">
+                        <tr>
+                            <th class="sobremim-positivo">Pontos Positivos:</th>
+                            <th class="sobremim-negativo">Pontos Negativos:</th>
+                        </tr>
+
+                        <tr>
+                            <td class="sobremim-positivo">Disposição e Comprometimento para aprender coisas novas.</td> 
+                            <td class="sobremim-negativo">Sou uma pessoa introvertida, porém no ambiente de trabalho sei a necessidade da comunicação.</td>
+                        </tr>
+                        <tr>
+                            <td class="sobremim-positivo">Otimista e Persistência.</td>
+                            <td class="sobremim-negativo">Auto-Cobrança.</td>
+                        </tr>
+                    </table>
+                    <p class="sobremim-paragrafo">
+                        <strong>Futuramente pretendo me especializar em Desenvolvimento de Games e criar meu primeiro projeto.</strong> 
+                    </p>
                 </aside>
-            </article>
-        </main>
+            </main>
+        
 
         <main id="certificados"> <!-- Certificados -->
             <h1 id="certificado-titulo">Certificados:</h1>
@@ -88,18 +110,33 @@
 
             <section id="certificado-sessao">
 
+                <button id="botao-voltar">
+                    <img src="css/img/voltar.png" alt="Voltar" id="voltar">
+                </button>
+
                 <div class="certificado-caixa">
                     <a href="https://imgur.com/a/1FjBGZf" target="_blank" title="Link externo para melhor visualização." class="link-certificado , certificado-legenda">
                         <img src="css/img/certificado-soucode.png" alt="Cerificado da SouCode sobre Infraestrutura de Dados"class="certificado-imagem">
                         <br>
-                        InfraEstrutura de Dados - SouCode
+                        InfraEstrutura de Dados <br>
+                        - SouCode
+                        <br><br>
+                    </a>
+                </div>
+                
+                <div class="certificado-caixa">
+                    <a href="" target="_blank" title="Link externo para melhor visualização." class="link-certificado , certificado-legenda">
+                        <img src="css/img/pagina-em-manutencao.jpg" alt class="certificado-imagem">
+                        <br>
+                        Técnico em Desenvolvimento de Software. <br>
+                        -- EM ANDAMENTO
+                        <br><br>
                     </a>
                 </div>
 
-                <div class="certificado-caixa">
-                    <img src alt class="certificado-imagem">
-                    <label>Técnico em Desenvolvimento de Software.</label>
-                </div>
+                <button id="botao-proximo">
+                    <img src="css/img/voltar.png" alt="Proximo" id="proximo">
+                </button>
             </section>
         </main>
 
@@ -115,18 +152,16 @@
                     <h2 id="contatos">Contato:</h2>
 
                     <ul class="lista">
-                        <li><a href class="link-rodape">Linkedin</a></li>
-                        <li><a href class="link-rodape">Instagram</a></li>
-                        <li><a href class="link-rodape">Email</a></li>
+                        <li><a href="https://www.linkedin.com/in/arthur-santos-b63849209/" class="link-rodape" target="_blank">Linkedin</a></li>
+                        <li><a href="" class="link-rodape">Instagram</a></li>
+                        <li><span id="email">E-mail: arthurvsantosa@gmail.com</span></li>
                     </ul>
                 </div>
 
                 <div class="rodape-informacoes-caixa" id="caixa-repositorio">
                     <h2 id="repositorios">Repositorios/Projetos:</h2>
                     <ul class="lista">
-                        <li><a href="https://github.com/CairoHS/Pandora.git"
-                                target="_blank"
-                                class="link-rodape">Pandora</a></li>
+                        <li><a href="https://github.com/CairoHS/Pandora.git" target="_blank" class="link-rodape">Pandora</a></li>
                         <li><a href class="link-rodape">Projeto2</a></li>
                         <li><a href class="link-rodape">Projeto3</a></li>
                     </ul>
@@ -135,7 +170,7 @@
                 <a href="https://github.com/DevArthur-S?tab=repositories"
                     target="_blank" id="link-github-icon">
                     <img src="css/img/github-icon.png" alt="Icone do github"
-                        id="github-icon">
+                        id="github-icon" title="Meus repositorios github">
                 </a>
             </section>
             <br>
