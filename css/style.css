@@ -13,26 +13,37 @@
 }
 
 :root {
-    --fundoheaderbranco: #ffffff;
-    --fundoheaderazul: #00A7C1;
+    --fundoheader: #00a8ebf3;
+    /* Claro */
+    --fundobody: #ffffff;
     --fundorodape: #999999;
     --fundobotaowhatsapp: #33a036;
     --bordabotaowhatsapp: #1c521e;
-    --cortextoazul: #00A7C1;
+    --bordabotaoprojetos: #00a8ebf3;
+    --cortextoh1: #00b7fff3;
+    --cortexto: #00a8ebf3;
     --cortextobranco: #ffffff;
-    --corscroll: #00A7C1;
-    --corbotaoscroll: #00ddff;
-    --bordaprojetos: #00A7C1;
+    --cortextorodapetitulo: #d3d3d3;
+    --cortextorodapelink: #5c5c5c;
+    --corscroll: #00a8ebf3;
+    --corbotaoscroll: #00a8ebf3;
+    --bordaprojetos: #00a8ebf3;
     --font3d: '3d', sans-serif;
     --fontSpaceMono: "Space Mono", monospace;
+
+    /* Escuro */
+    --darkbody: #292929;
 }
 
 * {
     margin: 0;
     padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: var(--fontSpaceMono), Arial, Helvetica, sans-serif;
 }
 
+body{
+    background-color: var(--fundobody);
+}
 
 /* Estilização do cabeçalho*/
 
@@ -49,6 +60,7 @@
 #cabecalho-logo{
     width: 110px;
     transition: 1s ease-in-out;
+    margin: auto;
 }
 
 #cabecalho-nav{
@@ -56,19 +68,68 @@
 }
 
 .cabecalho-nav-link{
-    color: var(--cortextoazul);
-    text-decoration: none;
+    margin: auto 10px;
     font-family: var();
     font-size: 20px;
-    margin: auto 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--cortexto);
 }
 
 .lista{
     list-style: none;
+}
 
+#modoescuro{
+    position: fixed;
+    width: 40px; height: 40px;
+    padding: 5px;
+    border-radius: 50%;
+    border: 0;
+    bottom: 80px; right: 20px;
+    background-color: rgb(0, 0, 124);
+}
+
+#modoescuro img{
+    width: 100%;
+}
+
+#modoescuro:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    animation: girar infinite 4s linear;
+    transition: 0.3s;
+}
+
+#modoclaro{
+    display: none;
+    position: fixed;
+    width: 40px; height: 40px;
+    border-radius: 50%;
+    border: 0;
+    background-color: transparent;
+    bottom: 80px; right: 20px;
+    animation-fill-mode: forwards;
+}
+    
+#modoclaro img{
+    width: 100%;
+}
+
+#modoclaro:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    animation: girar infinite 4s linear;
+    transition: 0.3s;
+}
+
+@keyframes girar {
+    0% {rotate: 0deg;}
+    100%{rotate: 360deg;}
 }
 
 /* Estilização do artigo Sobremim*/
+
 
 #sobremim{
     display: flex;
@@ -81,8 +142,9 @@
 }
 
 .icon{
-    width: 30px;
-    margin: 0 2px;
+    width: 25px;
+    margin: 0 5px;
+    transition: 0.3s;
 }
 
 .icon:hover{
@@ -90,26 +152,32 @@
 }
 
 #sobremim-texto{
-    margin-top: 80px;
     max-width: 800px; height: max-content;
 }
 
 #sobremim-titulo{
     width: max-content;
+    margin: 0; padding: 0%;
     font-size: 8vh;
     font-family: var(--fontSpaceMono);
-    color: var(--cortextoazul);
+    color: var(--cortextoh1);
+}
+
+#sobremim-titulo-linha{
+    background-color: var(--cortexto);
+    height: 2px;
+    border: 0;
 }
 
 #sobremim-titulo2{
     width: max-content;
-    font-size: 6vh;
-    font-family: var(--fontSpaceMono);
-    color: var(--cortextoazul);
+    font-size: 5vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--cortexto);
 }
 
 #sobremim-comentario{
-    width: max-content;
+    max-width: max-content;
     font-size: 3vh;
     font-family: var(--fontSpaceMono);
 }
@@ -122,6 +190,100 @@
     width: 100%;
 }   
 
+.cv{
+    cursor: pointer;
+    position: relative;
+    padding: 10px 24px;
+    font-size: 18px;
+    color: var(--cortexto);
+    border: 2px solid var(--bordabotaoprojetos);
+    border-radius: 20px;
+    background-color: transparent;
+    font-weight: 600;
+    transition: all 0.2s cubic-bezier(0.23, 1, 0.320, 1);
+    overflow: hidden;
+  }
+
+  .cv{
+    text-decoration: none;
+  }
+
+  .cv:visited{
+    color: var(--cortexto);
+  }
+
+  .cv::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    margin: auto;
+    width: 60px;
+    height: 50px;
+    border-radius: inherit;
+    scale: 0;
+    z-index: -1;
+    background-color: var(--fundoheader);
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.320, 1);
+  }
+  
+.cv:hover::before {
+    scale: 3;
+  }
+  
+.cv:hover{
+    color: var(--cortextobranco);
+    scale: 1.1;
+    box-shadow: 0 0px 20px rgba(71, 159, 194, 0.4);
+  }
+  
+  
+.cv:active {
+    scale: 1;
+  }
+  
+
+/* Informações sobre mim*/
+#mim{
+    padding: 50px;
+}
+
+#mim-titulo{
+    margin: 0; padding: 5px;
+    font-size: 8vh;
+    font-family: var(--fontSpaceMono);
+    color: var(--cortextoh1);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#mim-texto{
+    width: 600px;
+    margin: auto;
+}
+
+#mim-texto p {
+    text-align: justify;
+}
+
+#meunome{
+    font-family: var(--fontSpaceMono);
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+    color: var(--cortextoh1);
+    
+}
+
+#profissao{
+    font-weight: bold;
+    color: var(--cortextoh1);
+}
+
+.linguagens{
+    font-style: italic;
+    font-weight: bold;
+}
+
 /* Aba de projetos*/
 
 #projetos{
@@ -132,43 +294,80 @@
     text-align: center;
     font-size: 55px;
     font-family: var(--fontSpaceMono);
-    color: var(--cortextoazul);
+    color: var(--cortexto);
 }
 
 #projetos-demonstracao{
     margin: 50px auto;
     width: max-content;
-    display: grid;
-    grid-template-columns: max-content max-content max-content;
-    column-gap: 10vh;
-    row-gap: 2vh;
+    display: flex;
 }
 
 .projetos-caixa{
-    display: grid;
+    display: flex;
     padding: 20px;
     width: max-content;
     border-radius: 30px;
+    text-align: center;
 }
 
-.projetos-img{
-    width: 40vh;
-    border-radius: 20px;
-    border: 2px solid var(--bordaprojetos);
+.projetos-caixa-informacoes{
+    padding: 10px;
+    background-color: var(--fundobody);
+    border: 2px double var(--bordaprojetos);
+    border-radius: 30px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432);
 }
 
-.projetos-caixa label{
+.projetos-caixa-img{
+    display: flex;
+    border: 3px solid var(--bordabotaoprojetos);
+    border-radius: 23px;
+}
+
+.projetos-img-principal{
+    width: 100vh;
+    border-radius: 20px 0 0 20px;
+}
+
+.projetos-img-responsivo{
+    width: 30vh;
+    border-radius: 0 20px 20px 0;
+}
+
+.projetos-caixa-informacoes label{
     font-weight: bolder;
-    text-align: left;
     font-size: 3vh;
     margin-left: 5px;
 }
 
-.projetos-caixa p {
-    width: 40vh;
-    margin-left: 5px;
-    text-align: left;
+.projetos-caixa-informacoes p {
     font-size: 2.5vh;
+    text-align: justify;
+    width: max-content;
+    margin: auto;
+}
+
+#p2{
+    display: none;
+}
+
+#p3{
+    display: none;
+}
+
+.projetos-botao{
+    height: 40px; width: 60px;
+    margin: auto 10px;
+    border: 2px solid var(--bordabotaoprojetos);
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.432);
+    overflow: hidden;
+}
+
+.projetos-botao:hover{
+    cursor: pointer;
+    transform: scale(1.02);
 }
 
 #botao-whatsapp{
@@ -180,6 +379,7 @@
     border-radius: 20px;
     box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.61);
     padding: 5px;
+    transition: 0.3s;
 }
 
 #imagem-whatsapp{
@@ -191,19 +391,47 @@
 }
 
 /*Rodape do portifolio*/
-
 #rodape{
     background-color: var(--fundorodape);
-    padding: 20px;
+}
+
+#info-rodape{
+    padding: 10px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#info-rodape h1{
+    color: var(--cortextorodapetitulo);
+}
+
+#info-rodape ul{
+    list-style: none;
+}
+
+#info-rodape a{
+    color: var(--cortextorodapelink);
+}
+
+#copy{
+    padding: 10px;
+    background-color: #242424;
+    color: white;
+}
+
+#copy p{
+    font-size: 10px;
+    text-align: center;
+    font-weight: bold;
 }
 
 /* Edição de HR */
 .linha{
     width: 500px; height: 5px;
     margin: auto;
-    background-color: var(--cortextoazul);
+    background-color: var(--cortexto);
     border: 0;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
 }
 
 ::-webkit-scrollbar{

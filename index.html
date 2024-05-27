@@ -10,16 +10,18 @@
     </head>
 
     <body>
+        
+        <button id="modoescuro"> <img src="css/icon/lua.png" alt=""></button>
+        <button id="modoclaro"> <img src="css/icon/sol.png" alt=""></button>
+
         <header id="cabecalho"> <!-- Cabeçalho com hyperlinks de direcionamento interno (Logo, Home, Sobre mim, Portifólio e Contatos)-->
-            <a href=""><img src="css/img/logo_azul.png" alt="" id="cabecalho-logo"></a>
-                
+            <a href="#"><img src="css/img/logo_azul.png" alt="" id="cabecalho-logo"></a>
+            
+
             <nav id="cabecalho-nav"> <!---->
-                <ul class="lista">
-                    <li>
-                        <a href="" id="nav-github" class="cabecalho-nav-link">Github</a>
-                        <a href="" id="nav-linkedin" class="cabecalho-nav-link">Linkedin</a>
-                        <a href="" id="nav-curriculo" class="cabecalho-nav-link">Curriculum Lates</a>
-                </ul>
+                <a href="#" id="nav-home" class="cabecalho-nav-link">home</a>
+                <a href="#quebra-mim" id="nav-sobremim" class="cabecalho-nav-link">Sobre mim</a>
+                <a href="#quebra-projetos" id="nav-projeto" class="cabecalho-nav-link">Projetos</a>
             </nav>
         </header>
 
@@ -27,11 +29,13 @@
             <article id="sobremim">
                 <section id="sobremim-texto">
                     <h1 id="sobremim-titulo">Arthur Santos</h1>
-                    <h2 id="sobremim-titulo2">Desenvolvedor Front-End</h2>
+                    <hr id="sobremim-titulo-linha">
                     <br>
+                    <h2 id="sobremim-titulo2">Desenvolvedor Front-End</h2>
+                    
+                    <p id="sobremim-comentario">Este é meu website e Portifólio oficial. <br> Conheça mais detalhes dos trabalhos desenvolvidos por mim, aqui.</p><br>
 
                     
-                    <hr style="height: 5px; margin: auto; background-color: var(--cortextoazul); border: 0; border-radius: 10px;"><br>
                     <div id="sobremim-icones">
                         <img class="icon" src="css/icon/html48.png" alt="Icone da linguagem HTML" title="Liguagem de marcação HTML">
                         <img class="icon" src="css/icon/css48.png" alt="Icone da linguagem CSS" title="Liguagem de marcação CSS">
@@ -39,80 +43,101 @@
                         <img class="icon" src="css/icon/python48.png" alt="Icone da linguagem Python" title="Liguagem de programação Python">
                         <img class="icon" src="css/icon/mysql48.png" alt="Icone do Banco de Dados MySQL" title="Banco de dados MySQL">
                     </div>
+                    
                     <br>
 
-                    <p id="sobremim-comentario">Este é meu website e Portifólio oficial. <br>
-                    Conheça mais detalhes dos trabalhos desenvolvidos por mim, aqui.</p><br>
-                    <button> Donwload CV</button>
+                    <a href="css/pdf/Arthur Currículo.pdf" download="css/pdf/Arthur Currículo.pdf"></a><button class="cv"> Donwload CV</button></a>
                 </section>
 
                 <div id="sobremim-caixa-minhafoto">
                     <img src="css/img/foto_perfil.png" alt="Minha foto" id="sobremim-minhafoto">
                 </div>
             </article>
+
+            <br id="quebra-mim">
             <br>
+            <article id="mim">
+                <h1 id="mim-titulo">Sobre mim:</h1>
+                <hr class="linha">
+                <br><br>
+                <section id="mim-texto">
+                    <p>Olá, prazer em te conhecer! Me chamo <span id="meunome"> Arthur Santos</span>, tenho <span id="idade"></span> anos. Sou Desenvolvedor <span id="profissao">front-end</span> e estudante de Desenvolvimento de software, nivel técnico.</p>
+                    <br>
+                    <p>Durante o curso, conheci as linguagens <span class="linguagens">Python</span>, <span class="linguagens">PHP</span>, <span class="linguagens">JavaScript</span> e <span class="linguagens">MySQL</span>.</p>
+                    <br>
+                    <p> Atualmente, estou focado em aprender JavaScript para interação em aplicações WEB. Desenvolvi alguns projetos, durante o curso Técnico e espero que gostem ^^. </p>
+                </section>
+            </article>
+            <br id="quebra-projetos">
             <article id="projetos">
                 <h1 id="projetos-titulo">PROJETOS:</h1>
                 <hr class="linha">
             <section id="projetos-demonstracao">
                     <div class="projetos-caixa">
-                        <img class="projetos-img" src="css/img/pagina-em-manutencao.jpg" alt="">
-                        <label> Manutenção</label>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                    <div class="projetos-caixa">
-                        <img class="projetos-img" src="css/img/pagina-em-manutencao.jpg" alt="">
-                        <label> Manutenção</label>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                    <div class="projetos-caixa">
-                        <img class="projetos-img" src="css/img/pagina-em-manutencao.jpg" alt="">
-                        <label> Manutenção</label>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                    <div class="projetos-caixa">
-                        <img class="projetos-img" src="css/img/pagina-em-manutencao.jpg" alt="">
-                        <label> Manutenção</label>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                    <div class="projetos-caixa">
-                        <img class="projetos-img" src="css/img/pagina-em-manutencao.jpg" alt="">
-                        <label> Manutenção</label>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
-                    </div>
-                    <div class="projetos-caixa">
-                        <img class="projetos-img" src="css/img/pagina-em-manutencao.jpg" alt="">
-                        <label> Manutenção</label>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. </p>
+                        <button class="projetos-botao"> Voltar</button>
+                        <div class="projetos-caixa-informacoes">
+                            <div class="projetos-caixa-img" id="p1">
+                                <img class="projetos-img-principal" src="css/img/projeto_pandora.png" alt="">
+                                <img class="projetos-img-responsivo" src="css/img/pagina-em-manutencao.jpg" alt="">
+                            </div>
+                            <div class="projetos-caixa-img" id="p2">
+                                <img class="projetos-img-principal" src="css/img/projeto_pandora.png" alt="">
+                                <img class="projetos-img-responsivo" src="css/img/pagina-em-manutencao.jpg" alt="">
+                            </div>
+                            <div class="projetos-caixa-img" id="p3">
+                                <img class="projetos-img-principal" src="css/img/projeto_pandora.png" alt="">
+                                <img class="projetos-img-responsivo" src="css/img/pagina-em-manutencao.jpg" alt="">
+                            </div>
+
+                            
+                            <label id="projeto-legenda"> Pandora</label>
+                            <p id="projeto-comentario">
+                                Loja de vendas fictícia com segmento em curso de tecnologias. <br>
+                                <b>Linguagens:</b> <i>JavaScript</i> e <i>Python</i>. <br>
+                                <b>Banco de Dados:</b> <i>MySQL</i>.
+                              </p>
+                        </div>
+                        <button class="projetos-botao"> Próximo</button>
                     </div>
                 </section>
             </article>
 
             <button id="botao-whatsapp">
-                <img src="css/icon/icon-zap48.png" alt="" id="imagem-whatsapp">
+                <a href="https://wa.me/5581996548073" target="_blank"><img src="css/icon/icon-zap48.png" alt="" id="imagem-whatsapp"></a>
             </button>
         </main>
         <footer id="rodape">
+            <div id="info-rodape">
             <section id="rodape-contatos">
                 <h1 id="rodape-titulo">Contatos</h1>
                 <ul>
-                    <li><a href="">Whatsapp</a></li>
+                    <li><a href="https://wa.me/5581996548073" target="_blank">Whatsapp</a></li>
                     <li><a href="">Telegram</a></li>
                     <li>+55(81)99654-8073</li>
                     <li>arthurvsantosa@gmail.com</li>
                 </ul>
             </section>
+            <hr>
             <section id="rodape-social">
                 <h1>Redes Sociais:</h1>
                 <ul>
-                    <li><a href="">Linkedin</a></li>
-                    <li><a href="">Instagran</a></li>
-                    <li><a href="">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/arthur-santos-b63849209/" target="_blank">Linkedin</a></li>
+                    <li><a href="">Instagram</a></li>
+                    <li><a href="https://github.com/DevArthur-S?tab=repositories" target="_blank">Github</a></li>
                 </ul>
+            </section>
+        </div>
+        <section id="copy">
+            <p>
+                © Arthur Santos, 2024. Todos os direitos reservados.
+            </p>
             </section>
         </footer>
         
-    <script src="portifolio.js"></script>
-    </body>
+    <script src="js/cabecalhoerodape.js"></script>
+    <script src="js/idade.js"></script>
+    <script src="js/modoclaro.js"></script>
+    <script src="js/modoescuro.js"></script>
+    </body> 
 
 </html>
