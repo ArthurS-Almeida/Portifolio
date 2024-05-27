@@ -268,7 +268,6 @@ body{
 #meunome{
     font-family: var(--fontSpaceMono);
     font-weight: bold;
-    text-decoration: underline;
     text-transform: uppercase;
     color: var(--cortextoh1);
     
