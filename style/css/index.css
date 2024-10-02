@@ -6,7 +6,7 @@
 }
 
 body {
-  height: 100dvh;
+  height: 100dvh; width: 100%;
   display: flex;
 }
 
@@ -18,15 +18,15 @@ body {
   position: fixed;
   flex-direction: column;
   background-color: #434B8F;
-  max-width: 350px;
-  height: 100%;
+  max-width: 350px; height: 100%;
+
 }
 
 #perfil-cabecalho {
   display: grid;
   place-items: center;
   gap: 26px;
-  padding: 30px 22px 0 22px;
+  padding: 22px 22px 0 22px;
   text-align: center;
   color: #ffffff;
 }
@@ -63,6 +63,16 @@ body {
   font-size: 19px;
   font-weight: normal;
   font-style: italic;
+}
+
+#cabecalho-botao{
+  position: absolute;
+  top: 20px; left: 230px;
+  height: 40px; width: 40px;
+  border-radius: 50px;
+  border: 0;
+  background-color: #383f79;
+  cursor: pointer;
 }
 
 /* REDE */
@@ -128,6 +138,138 @@ body {
   color: #ffffff;
 }
 
+
+@media (max-height: 900px) {
+  #perfil {
+    transition: inicio 1s ease;
+    max-width: 250px;
+  }
+
+  #perfil-cabecalho {
+    display: grid;
+    place-items: center;
+    gap: 15px;
+    padding: 22px 22px 0 22px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  
+  #container-foto{
+    transition: ease 1s;
+    max-width: 80% ;
+  }
+
+  #cabecalho-titulo {
+    transition: ease 1s;
+    font-size: 18px;
+  }
+
+  #cabecalho-nome {
+    transition: ease 1s;
+    font-size: 18px;
+  }
+
+  #cabecalho-formacao {
+    transition: ease 1s;
+    font-size: 13px;
+  }
+  /* REDES */
+  
+  #rede-email > img{
+    width: 25px;
+  }
+
+  #rede-email > span{
+    font-size: 12px;
+  }
+
+  #bar-titulo {
+    font-size: 12px;
+  }
+
+  #bar-nav-list > li > a > img {
+    width: 25px;
+  }
+  /* RODAPE*/
+
+  #rodape {
+    padding: 10px;
+  }
+
+  #rodape > p {
+    font-size: 12px;
+  }
+
+}
+
+@media (max-height: 900px) {
+  #perfil {
+    transition: inicio 0.5s ease;
+    max-width: 250px;
+  }
+
+  #perfil-cabecalho {
+    display: grid;
+    place-items: center;
+    gap: 15px;
+    padding: 22px 22px 0 22px;
+    text-align: center;
+    color: #ffffff;
+  }
+  
+  
+  #container-foto{
+    transition: ease 0.5s;
+    max-width: 80% ;
+  }
+
+  #cabecalho-titulo {
+    transition: ease 0.5s;
+    font-size: 18px;
+  }
+
+  #cabecalho-nome {
+    transition: ease 0.5s;
+    font-size: 18px;
+  }
+
+  #cabecalho-formacao {
+    transition: ease 0.5s;
+    font-size: 13px;
+  }
+  /* REDES */
+  
+  #rede-email > img{
+    width: 25px;
+  }
+
+  #rede-email > span{
+    font-size: 12px;
+  }
+
+  #bar-titulo {
+    font-size: 12px;
+  }
+
+  #bar-nav-list > li > a > img {
+    width: 25px;
+  }
+  /* RODAPE*/
+
+  #rodape {
+    padding: 10px;
+  }
+
+  #rodape > p {
+    font-size: 12px;
+  }
+
+}
+
+#principal{
+  margin-left: 250px;
+}
 /* ABA PRINCIPAL*/
 
 /*# sourceMappingURL=index.css.map */
