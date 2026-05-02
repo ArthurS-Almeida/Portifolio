@@ -1,0 +1,9 @@
+#baseBoard{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#mensagem{
+    max-width: 230px;
+}
